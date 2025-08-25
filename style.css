@@ -13,9 +13,9 @@ body{
     background: #fff;
     height: 100px;
     width: 80%;
-    margin: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 10px;
     box-shadow: 0 4px 8px #333;
     position: fixed;
@@ -351,3 +351,4 @@ background: #FFF;
     margin-top: 40px;
 
 }
+
