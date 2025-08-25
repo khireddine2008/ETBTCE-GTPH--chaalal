@@ -7,16 +7,13 @@ body{
     text-align: right;
 }
 .header{
-    background: #fff;
+    background: #333;
+    width: 100%;
 }
 .fix-head{
     background: #fff;
-    height: 100px;
-    width: 80%;
-    margin: 3%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 10px;
+    height: 120px;
+    width: 100%;
     box-shadow: 0 4px 8px #333;
     position: fixed;
 }
@@ -38,6 +35,7 @@ ul li{
     height: 100;
     width: 100;
     float: right;
+    padding: 10px;
 }
 .head{
     background: #fff;
@@ -349,6 +347,4 @@ background: #FFF;
     margin-right: 40px;
     float: right;
     margin-top: 40px;
-
 }
-
