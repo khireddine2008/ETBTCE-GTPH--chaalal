@@ -27,14 +27,18 @@ a:hover{
 }
 ul li{
     display: inline;
-    margin: 20px;
+    margin: 3%;
 }
 .fix-right{
     text-align: right;
+    width: 43%;
+    height: 120px;
     float: right;
 }
 .fix-left{
     text-align: left;
+    width: 44%;
+    height: 120px;
     float: left;
 }
 .c-fix{
@@ -429,5 +433,6 @@ input[type="submit"]:hover{
     background: #FFF;
 }
 .fr{
-    text-align: right;
+    text-align: left;
+    margin-left: 10%;
 }
