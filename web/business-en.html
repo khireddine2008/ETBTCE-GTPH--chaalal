@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="business" />
+  <meta name="author" content="khiro" />
+  <title>ETB/business</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" type="image/x-icon" href="../icon.ico" />
+</head>
+<body>
+  <div class="header">
+    <div class="fix-head">
+      <div>
+        <a href="../web/home-en.html"><img src="../image/logo.png" alt="logo" class="logo" style="width: 100px; height: 100px;" /></a>
+      </div>
+      <div class="fix-left">
+        <ul>
+          <li>
+            <select name="language" style="margin-top: 25px;"  id="pageSelect">
+              <option value="business-en.html" selected>English</option>
+              <option value="business-ar.html">Arabic</option>
+              <option value="business-fr.html">French</option>
+            </select>
+          </li>
+          <li><a href="../web/home-en.html#Connect-with-us" style="border: solid;margin: 10px;padding: 5px;font-size: 20px;border-radius: 6px;">Connect with us</a></li>
+        </ul>
+      </div>
+      <div class="fix-right"><br><br>
+        <ul>
+          <li><a href="call-us-en.html" class="c-fix">Call Us</a></li>
+          <li><a href="development-en.html" class="c-fix">About Us</a></li>
+          <li><a href="../web/home-en.html" class="c-fix">Homepage</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="garaj"><br></div>
+    <div class="business-video">
+        <video autoplay muted loop playsinline controls width="80%" height="400px">
+            <source src="../video/business.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="business">
+        <div class="business-text">
+          <h1 class="fr">R&D</h1>
+          <div class="fr">
+            <p style="font-size: 16px;">Being a contractor or business manager of construction works or public and hydraulic works in Algeria is difficult to access The profession cannot be taught in schools, institutes and universities</p>
+            <p style="font-size: 16px;">In addition to the difficulty of finding the best well-trained skills in the labor market that can be employed and trusted and relied upon in the performance of tasks, as well as the scarcity of assistance and mature administrative guidance</p>
+            <p style="font-size: 16px;">Finally, the "R&D" department of the Chaalal Hamid Company for Construction Works including tax and major public and hydraulic works</p>
+            <ins style="color: green;"><h2 style="color: green;">offers you the solution</h2></ins>
+            <p style="font-size: 16px;">We may not be the only ones, but we may be the best, accompanied by a trainer who has more than a quarter of a century of experience in the field and supervising the realization of dozens of projects, we offer intensive 14-day continuing education that contains everything you need to establish your </p>
+            <p style="font-size: 16px;">organization and run your business with confidence</p>
+        </div>
+        </div>
+        <div class="business-image">
+          <img src="../image/hamid.jpg" alt="business-image" width="100%" height="100%">
+        </div>
+    </div>
+    <div class="footer">
+      <div style="text-align: left; margin-left: 15%;">
+        <br><br>
+        <a href="https://instagram.com" target="_blank" style="margin-left: 20px;"><img src="../image/soshelmidya/I.png" alt="instagram" width="30" /></a>
+        <a href="https://twitter.com" target="_blank" style="margin-left: 20px;"><img src="../image/soshelmidya/T.png" alt="twitter" width="30" /></a>
+        <a href="https://facebook.com" target="_blank" style="margin-left: 20px;"><img src="../image/soshelmidya/F.png" alt="facebook" width="30" /></a>
+        <img src="../image/logo.png" alt="logo" width="50" style="float: right; margin-right: 20px;" />
+      </div>
+    </div>
+    <script>
+              document.getElementById("pageSelect").addEventListener("change", function() {
+                  let url = this.value;
+                  if (url) {
+                      window.location.href = url; // ينقل المستخدم إلى الرابط
+                  }
+              });
+
+              document.getElementById("contactForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // يمنع الإرسال العادي
+
+                // جلب البيانات
+                let name = document.getElementById("name").value;
+                let email = document.getElementById("email").value;
+                let message = document.getElementById("message").value;
+
+                // البريد اللي راح يوصلك
+                let to = "khirosa742@gmail.com";  // <-- غيره لإيميلك
+
+                // تجهيز الرابط لـ Gmail
+                let subject = encodeURIComponent("New Message from Contact Form");
+                let body = encodeURIComponent(
+                  "Name: " + name + "\n" +
+                  "Email: " + email + "\n\n" +
+                  "Message:\n" + message
+                );
+
+                // فتح Gmail في تبويب جديد
+                window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`, "_blank");
+              });
+    </script>
+  </body>
+</html>
