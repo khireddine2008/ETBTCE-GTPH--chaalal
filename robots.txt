@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://khireddine2008.github.io/sitemap.xml
