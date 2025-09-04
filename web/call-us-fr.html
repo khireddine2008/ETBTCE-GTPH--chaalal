@@ -7,6 +7,12 @@
   <title>ETB/Call us</title>
   <link rel="stylesheet" href="../style.css" />
   <link rel="icon" type="image/x-icon" href="../icon.ico" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("eUhmexwpNz5XkvfQV"); // Public Key
+    })();
+  </script>
 </head>
 <body>
   <div class="header">
@@ -39,7 +45,7 @@
       <form class="contact-form" id="contactForm">
         <div class="inputs">
           <input type="text" id="name" placeholder="Nom" required>
-          <input type="text" id="Phone number" placeholder="Numéro de téléphone" required>
+          <input type="text" id="phone" placeholder="Numéro de téléphone" required>
           <input type="email" id="email" placeholder="Votre e-mail" required>
           <input type="submit" value="Envoyer">
         </div>
@@ -49,9 +55,9 @@
     <div class="footer">
       <div style="text-align: left; margin-left: 15%;">
         <br><br>
-        <a href="https://instagram.com" target="_blank" style="margin-left: 20px;"><img src="../image/soshelmidya/I.png" alt="instagram" width="30" /></a>
-        <a href="https://twitter.com" target="_blank" style="margin-left: 20px;"><img src="../image/soshelmidya/T.png" alt="twitter" width="30" /></a>
-        <a href="https://facebook.com" target="_blank" style="margin-left: 20px;"><img src="../image/soshelmidya/F.png" alt="facebook" width="30" /></a>
+        <a href="https://www.instagram.com/chaalalhamidetbtce/" target="_blank" style="margin-left: 20px;"><img src="../image/soshelmidya/I.png" alt="instagram" width="30" /></a>
+        <a href="https://x.com/etbtce_chaalal" target="_blank" style="margin-left: 20px;"><img src="../image/soshelmidya/T.png" alt="twitter" width="30" /></a>
+        <a href="https://www.facebook.com/etb.tce.chaalal.hamid/" target="_blank" style="margin-left: 20px;"><img src="../image/soshelmidya/F.png" alt="facebook" width="30" /></a>
         <img src="../image/logo.png" alt="logo" width="50" style="float: right; margin-right: 20px;" />
       </div>
     </div>
@@ -64,30 +70,40 @@
               });
 
               document.getElementById("contactForm").addEventListener("submit", function(event) {
-                event.preventDefault(); // يمنع الإرسال العادي
+                  event.preventDefault();
 
-                // جلب البيانات
-                let name = document.getElementById("name").value;
-                let Phone_number = document.getElementById("Phone number").value;
-                let email = document.getElementById("email").value;
-                let message = document.getElementById("message").value;
+                  // نحصل على الزر
+                  let submitBtn = this.querySelector('input[type="submit"]');
+                  submitBtn.disabled = true;       // نوقف الزر
+                  submitBtn.value = "⏳ Envoi..."; // نغير النص
 
-                // البريد اللي راح يوصلك
-                let to = "help@etbtce-gtph-chaalal.com";  // <-- غيره لإيميلك
+                  let params = {
+                    name: document.getElementById("name").value,
+                    phone: document.getElementById("phone").value,
+                    email: document.getElementById("email").value,
+                    message: document.getElementById("message").value
+                  };
 
-                // تجهيز الرابط لـ Gmail
-                let subject = encodeURIComponent("New Message from etbtce&gtph");
-                let body = encodeURIComponent(
-                  "Name: " + name + "\n" +
-                  "Phone number: " + Phone_number + "\n" +
-                  "Email: " + email + "\n\n" +
-                  "Message:\n" + message
-                );
+                  emailjs.send("service_if9wn4l", "template_dcloigp", params)
+                    .then(function(response) {
+                      console.log("SUCCESS", response);
+                      alert("✅ Merci de nous avoir contactés. Nous répondrons à votre e-mail dans les plus brefs délais!");
 
-                // فتح Gmail في تبويب جديد
-                window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`, "_blank");
-              });
+                      // نرجع الزر لحالتو
+                      submitBtn.disabled = false;
+                      submitBtn.value = "Envoyer";
+
+                      // نفضي الفورم بعد الإرسال
+                      document.getElementById("contactForm").reset();
+                    }, function(error) {
+                      console.error("FAILED", error);
+                      alert("❌ L'envoi a échoué.");
+
+                      // نرجع الزر يشتغل
+                      submitBtn.disabled = false;
+                      submitBtn.value = "Envoyer";
+                    });
+                });
     </script>
   </body>
-
 </html>
