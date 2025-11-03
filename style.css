@@ -297,7 +297,7 @@ option {
 }
 .owls{
     background: #FFF;
-    height: 500px;
+    height: 700px;
     margin-right: 3%;
     margin-left: 3%;
 
@@ -435,4 +435,5 @@ input[type="submit"]:hover{
 .fr{
     text-align: left;
     margin-left: 10%;
+
 }
