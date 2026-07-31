@@ -1,141 +1,302 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="description" content="Devlelopment" />
-  <meta name="author" content="khiro" />
-  <title>ETB/Devlelopment</title>
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="icon" type="image/x-icon" href="../icon.ico" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="معلومات عن مؤسسة أشغال البناء شعلال حميد: قصة التأسيس منذ 1997، الشهادات، الإنجازات، وقيم العمل التي تحكم مسيرتنا.">
+  <meta name="author" content="khiro">
+  <meta name="theme-color" content="#131713">
+  <title>معلومات عنا — ETB TCE &amp; GTPH Chaalal</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="معلومات عنا — ETB TCE &amp; GTPH Chaalal">
+  <meta property="og:description" content="قصة تأسيس مؤسسة أشغال البناء شعلال حميد منذ 1997: الشهادات، الإنجازات وقيم العمل.">
+  <meta property="og:url" content="https://etbtce-gtph-chaalal.com/web/development-ar.html">
+  <link rel="canonical" href="https://etbtce-gtph-chaalal.com/web/development-ar.html">
+  <link rel="icon" type="image/x-icon" href="../icon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script defer src="../script.js"></script>
 </head>
 <body>
-  <div class="header">
-    <div class="fix-head">
-      <div>
-        <a href="../index.html"><img src="../image/logo.png" alt="logo" class="logo" style="width: 100px; height: 100px;" /></a>
+
+  <!-- ======================= Navbar ======================= -->
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="../index.html" aria-label="ETB TCE &amp; GTPH Chaalal — الصفحة الرئيسية">
+        <img src="../image/logo.svg" alt="شعار مؤسسة ETB TCE &amp; GTPH Chaalal">
+        <span class="nav-brand-text">
+          <span class="nav-brand-name">ETB TCE &amp; GTPH</span>
+          <span class="nav-brand-sub">شعلال حميد · منذ 1997</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="التنقل الرئيسي">
+        <a class="nav-link" href="../index.html">الرئيسية</a>
+        <a class="nav-link active" href="development-ar.html">معلومات عنا</a>
+        <a class="nav-link" href="../index.html#services">خدماتنا</a>
+        <a class="nav-link" href="business-ar.html">التدريب R&amp;D</a>
+        <a class="nav-link" href="Topographic-ar.html">الطبوغرافيا</a>
+        <a class="nav-link" href="call-us-ar.html">اتصل بنا</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <select class="lang-select" data-lang-select aria-label="اختر اللغة">
+            <option value="development-ar.html" selected>العربية</option>
+            <option value="development-en.html">English</option>
+            <option value="development-fr.html">Français</option>
+          </select>
+        </div>
+        <a class="btn btn-solid" href="call-us-ar.html">تواصل معنا</a>
       </div>
 
-      <div class="fix-left">
-        <ul>
-          <li>
-            <select name="language" style="margin-top: 25px;"  id="pageSelect">
-              <option value="development-ar.html" selected>العربية</option>
-              <option value="development-en.html">الانجليزية</option>
-              <option value="development-fr.html">الفرنسية</option>
-            </select>
-          </li>
-          <li><a href="../index.html#Connect-with-us" style="border: solid;margin: 10px;padding: 5px;font-size: 20px;border-radius: 6px;">تواصل معنا</a></li>
-        </ul>
-      </div>
+      <button class="menu-btn" data-menu-btn aria-label="فتح القائمة" aria-expanded="false" aria-controls="drawer">
+        <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </header>
 
-      <div class="fix-right"><br><br>
-        <ul>
-          <li><a href="call-us-ar.html" class="c-fix">اتصل بنا</a></li>
-          <li><a href="development-ar.html" class="c-fix">معلومات عنا</a></li>
-          <li><a href="../index.html" class="c-fix">الصفحة الرئيسية</a></li>
-        </ul>
+  <!-- ======================= Mobile drawer ======================= -->
+  <div class="drawer" id="drawer" data-drawer aria-hidden="true">
+    <nav class="drawer-nav" aria-label="قائمة الجوال">
+      <a class="drawer-link" href="../index.html" data-drawer-link>الرئيسية <small>Home</small></a>
+      <a class="drawer-link" href="development-ar.html" data-drawer-link>معلومات عنا <small>About</small></a>
+      <a class="drawer-link" href="../index.html#services" data-drawer-link>خدماتنا <small>Services</small></a>
+      <a class="drawer-link" href="business-ar.html" data-drawer-link>التدريب R&amp;D <small>Training</small></a>
+      <a class="drawer-link" href="Topographic-ar.html" data-drawer-link>الطبوغرافيا <small>Topography</small></a>
+      <a class="drawer-link" href="call-us-ar.html" data-drawer-link>اتصل بنا <small>Contact</small></a>
+    </nav>
+    <div class="drawer-foot">
+      <div class="lang-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <select class="lang-select" data-lang-select aria-label="اختر اللغة">
+          <option value="development-ar.html" selected>العربية</option>
+          <option value="development-en.html">English</option>
+          <option value="development-fr.html">Français</option>
+        </select>
       </div>
-    </div>
-    <div class="HELLO-head">
-    </div>
-  </div>
-  <div class="HELLO">
-      <img src="../image/Devlelopment/Hello.png" alt="hello" style="width: 100%;">
-  </div>
-  <div class="Real-life">
-    <div>
-      <div class="H1-1"><br><br><br><br><br><br>
-        <img src="../image/Devlelopment/h1.jpg" alt="H1" width="100%" height="">
-      </div>
-      <div class="H1-2">
-        <h5 style="text-align: right;margin-right: 15%;">من نحن//</h5>
-        <h1 style="text-align: right;margin-right: 15%;">استراتيجية واقعية للوصول إلى أهدافك</h1>
-        <p style="font-size: 20px;text-align: right;margin-right: 15%;">
-          تأسست مؤسسة أشغال البناء في مراحلها المختلفة لجميع هياكل الدولة، والأشغال العامة الكبرى، والري، عام ١٩٩٧. تقدم المؤسسة خدمات إنجاز وبناء جميع أنواع المرافق، وتهيئة المساحات الخضراء والمزارع، بما في ذلك توفير جميع احتياجاتها، والأشغال العامة الكبرى، والري، وأعمال توصيل الكهرباء، والإنارة العامة، بالإضافة إلى توريد المحولات والمولدات الكهربائية في جميع أنحاء البلاد وخارجها، إلى جانب عملاء من شركات الاستثمار الخاص ورأس المال الاستثماري، مقدمةً حلولاً اقتصادية واقعية مبنية على تحليلات فعّالة ومتطورة وأرقام حقيقية. يُمكّننا تركيزنا من تقديم توصيات شخصية وقابلة للتنفيذ، تستند إلى صياغة دقيقة للمشكلات، ومنهجيات متطورة، ومعرفة عميقة بقطاع البناء وأصحاب المصلحة، وخبرة واسعة في مختلف التخصصات العلمية والتجارية. حصلت المؤسسة على العديد من شهادات الإنجاز الجيد من مختلف الإدارات الحكومية لمشاريع متنوعة، بما في ذلك البناء، والتجهيز، والتوصيل بالكهرباء، والإنارة العامة، وتوريد المولدات والمحولات الكهربائية.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="Certificates">
-        <div class="Certificates-1">
-          <img src="../image/Devlelopment/C1.png" alt="C1" style="width: 100%;height: 100%;" onclick="this.requestFullscreen()">
-        </div>
-        <div class="Certificates-2">
-          <img src="../image/Devlelopment/C2.png" alt="C2" style="width: 100%;height: 100%;" onclick="this.requestFullscreen()">
-        </div>
-        <div class="Certificates-2">
-          <img src="../image/Devlelopment/C3.png" alt="C3" style="width: 100%;height: 100%;" onclick="this.requestFullscreen()">
-        </div>
-        <div class="Certificates-2">
-          <img src="../image/Devlelopment/C4.png" alt="C4" style="width: 100%;height: 100%;" onclick="this.requestFullscreen()">
-        </div>
-        <div class="Certificates-2">
-          <img src="../image/Devlelopment/C5.png" alt="C5" style="width: 100%;height: 100%;" onclick="this.requestFullscreen()">
-        </div>
-        <div class="Certificates-2">
-          <img src="../image/Devlelopment/C6.png" alt="C6" style="width: 100%;height: 100%;" onclick="this.requestFullscreen()">
-        </div>
-        <div class="Certificates-2">
-          <img src="../image/Devlelopment/C7.png" alt="C7" style="width: 100%;height: 100%;" onclick="this.requestFullscreen()">
-        </div>
-  </div>
-  <h1 style="text-align: center;font-size: xxx-large;">انجازاتنا</h1>
-  <DIV class="owls"><br><br>
-    <img src="../image/Devlelopment/owls/1.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/2.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/3.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/4.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/5.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/6.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/7.jpg" alt="owls" class="owls-image"><br><br>
-    <img src="../image/Devlelopment/owls/8.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/9.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/10.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/11.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/12.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/13.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/14.jpg" alt="owls" class="owls-image"><br><br>
-    <img src="../image/Devlelopment/owls/15.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/16.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/17.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/18.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/19.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/20.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/21.jpg" alt="owls" class="owls-image"><br><br>
-    <img src="../image/Devlelopment/owls/22.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/23.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/24.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/25.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/26.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/27.jpg" alt="owls" class="owls-image">
-    <img src="../image/Devlelopment/owls/28.jpg" alt="owls" class="owls-image"><br><br>
-  </DIV>
-  <div class="best"><br><br><br>
-    <div class="best-image"><img src="../image/Devlelopment/best.png" alt="best" style="width: 100%;height: 100%;"></div>
-    <div class="best-text">
-      <h1>نحن صادقون مع أنفسنا، وملتزمون دائمًا ببذل قصارى جهدنا.</h1>
-      <p>نعتقد أننا نتميز. ليس لأننا نقول ذلك، بل لأننا نعمل بجد. نحن ملتزمون، ملتزمون، ومركّزون. نؤمن بأن الجميع سيصلون إلى أفضل حالاتهم ويتجاوزون أي تحدٍّ من خلال ثقافة وأخلاقيات مشتركة.</p>
-    </div>
-  </div>
-  <div class="footer">
-    <div style="text-align: left; margin-left: 15%;">
-      <br><br>
-      <a href="https://www.instagram.com/chaalalhamidetbtce/" target="_blank" style="margin-left: 20px;"><img src="../image/soshelmidya/I.png" alt="instagram" width="30" /></a>
-      <a href="https://x.com/etbtce_chaalal" target="_blank" style="margin-left: 20px;"><img src="../image/soshelmidya/T.png" alt="twitter" width="30" /></a>
-      <a href="https://www.facebook.com/etb.tce.chaalal.hamid" target="_blank" style="margin-left: 20px;"><img src="../image/soshelmidya/F.png" alt="facebook" width="30" /></a>
-      <img src="../image/logo.png" alt="logo" width="50" style="float: right; margin-right: 20px;" />
+      <a class="btn btn-amber btn-block" href="call-us-ar.html">تواصل معنا</a>
     </div>
   </div>
 
-  <script>
-            document.getElementById("pageSelect").addEventListener("change", function() {
-                let url = this.value;
-                if (url) {
-                    window.location.href = url; // ينقل المستخدم إلى الرابط
-                }
-            });
-    </script>
+  <main>
+    <!-- ======================= Page hero ======================= -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner">
+          <nav class="breadcrumb" aria-label="مسار التنقل">
+            <a href="../index.html">الرئيسية</a>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            <span>معلومات عنا</span>
+          </nav>
+          <h1>من نحن</h1>
+          <p>استراتيجية واقعية للوصول إلى أهدافك — منذ 1997 ونحن نبني ثقة عملائنا مشروعًا بعد مشروع.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= Who we are ======================= -->
+    <section class="section surface-white">
+      <div class="container">
+        <div class="split">
+          <div class="split-media reveal">
+            <img src="../image/Devlelopment/h1.jpg" alt="فريق عمل مؤسسة أشغال البناء في موقع الإنجاز" loading="lazy">
+          </div>
+          <div class="split-body reveal" style="--d:120ms">
+            <span class="eyebrow">من نحن //</span>
+            <h2>استراتيجية واقعية للوصول إلى أهدافك</h2>
+            <p class="lead">
+              تأسست مؤسسة أشغال البناء في مراحلها المختلفة لجميع هياكل الدولة، والأشغال العامة الكبرى، والري،
+              عام 1997. تقدم المؤسسة خدمات إنجاز وبناء جميع أنواع المرافق، وتهيئة المساحات الخضراء والمزارع،
+              بما في ذلك توفير جميع احتياجاتها، والأشغال العامة الكبرى، والري، وأعمال توصيل الكهرباء والإنارة
+              العامة، بالإضافة إلى توريد المحولات والمولدات الكهربائية في جميع أنحاء البلاد وخارجها.
+            </p>
+            <p>
+              إلى جانب عملاء من شركات الاستثمار الخاص ورأس المال الاستثماري، نقدم حلولًا اقتصادية واقعية مبنية
+              على تحليلات فعّالة ومتطورة وأرقام حقيقية. يمكّننا تركيزنا من تقديم توصيات شخصية وقابلة للتنفيذ،
+              تستند إلى صياغة دقيقة للمشكلات، ومنهجيات متطورة، ومعرفة عميقة بقطاع البناء وأصحاب المصلحة، وخبرة
+              واسعة في مختلف التخصصات العلمية والتجارية.
+            </p>
+            <ul class="split-points">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.1V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                <span><b>حلول اقتصادية واقعية</b> مبنية على تحليلات فعّالة وأرقام حقيقية</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.1V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                <span><b>توصيات شخصية قابلة للتنفيذ</b> عبر منهجيات متطورة وصياغة دقيقة للمشكلات</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.1V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                <span><b>خبرة واسعة</b> في مختلف التخصصات العلمية والتجارية</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= Certificates ======================= -->
+    <section class="section surface-light" id="certificates">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow center">شهاداتنا</span>
+          <h2 class="section-title">شهادات إنجاز حسن</h2>
+          <p class="section-sub">حصلت المؤسسة على شهادات إنجاز حسن من مختلف الإدارات الحكومية لمشاريع متنوعة — اضغط على أي شهادة لعرضها.</p>
+        </div>
+        <div class="cert-grid" data-gallery="certs">
+          <div class="cert-item reveal"><img src="../image/Devlelopment/C1.png" alt="شهادة إنجاز حسن 1" loading="lazy"></div>
+          <div class="cert-item reveal"><img src="../image/Devlelopment/C2.png" alt="شهادة إنجاز حسن 2" loading="lazy"></div>
+          <div class="cert-item reveal"><img src="../image/Devlelopment/C3.png" alt="شهادة إنجاز حسن 3" loading="lazy"></div>
+          <div class="cert-item reveal"><img src="../image/Devlelopment/C4.png" alt="شهادة إنجاز حسن 4" loading="lazy"></div>
+          <div class="cert-item reveal"><img src="../image/Devlelopment/C5.png" alt="شهادة إنجاز حسن 5" loading="lazy"></div>
+          <div class="cert-item reveal"><img src="../image/Devlelopment/C6.png" alt="شهادة إنجاز حسن 6" loading="lazy"></div>
+          <div class="cert-item reveal"><img src="../image/Devlelopment/C7.png" alt="شهادة إنجاز حسن 7" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= Achievements ======================= -->
+    <section class="section surface-white" id="achievements">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow center">إنجازاتنا</span>
+          <h2 class="section-title">معرض إنجازاتنا</h2>
+          <p class="section-sub">لمحة من المشاريع والأشغال التي نفذناها عبر مختلف القطاعات — اضغط على أي صورة لعرضها بالحجم الكامل.</p>
+        </div>
+        <div class="gallery-masonry" data-gallery="achv">
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/1.jpg" alt="إنجاز 1" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/2.jpg" alt="إنجاز 2" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/3.jpg" alt="إنجاز 3" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/4.jpg" alt="إنجاز 4" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/5.jpg" alt="إنجاز 5" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/6.jpg" alt="إنجاز 6" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/7.jpg" alt="إنجاز 7" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/8.jpg" alt="إنجاز 8" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/9.jpg" alt="إنجاز 9" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/10.jpg" alt="إنجاز 10" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/11.jpg" alt="إنجاز 11" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/12.jpg" alt="إنجاز 12" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/13.jpg" alt="إنجاز 13" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/14.jpg" alt="إنجاز 14" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/15.jpg" alt="إنجاز 15" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/16.jpg" alt="إنجاز 16" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/17.jpg" alt="إنجاز 17" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/18.jpg" alt="إنجاز 18" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/19.jpg" alt="إنجاز 19" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/20.jpg" alt="إنجاز 20" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/21.jpg" alt="إنجاز 21" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/22.jpg" alt="إنجاز 22" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/23.jpg" alt="إنجاز 23" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/24.jpg" alt="إنجاز 24" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/25.jpg" alt="إنجاز 25" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/26.jpg" alt="إنجاز 26" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/27.jpg" alt="إنجاز 27" loading="lazy"></div>
+          <div class="g-item reveal"><img src="../image/Devlelopment/owls/28.jpg" alt="إنجاز 28" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= Values band ======================= -->
+    <section class="section surface-pine" id="values">
+      <div class="container">
+        <div class="values-band">
+          <div class="values-media reveal">
+            <img src="../image/Devlelopment/best.png" alt="فريق العمل في الميدان" loading="lazy">
+          </div>
+          <div class="values-body reveal" style="--d:120ms">
+            <span class="eyebrow">قيمنا</span>
+            <h2>نحن صادقون مع أنفسنا، وملتزمون دائمًا ببذل قصارى جهدنا</h2>
+            <p>
+              نعتقد أننا نتميز، ليس لأننا نقول ذلك، بل لأننا نعمل بجد. نحن ملتزمون ومركّزون، ونؤمن بأن الجميع
+              سيصلون إلى أفضل حالاتهم ويتجاوزون أي تحدٍّ من خلال ثقافة وأخلاقيات مشتركة.
+            </p>
+            <div>
+              <a class="btn btn-amber" href="call-us-ar.html">تواصل معنا</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= Footer ======================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-brand">
+            <img src="../image/logo.svg" alt="شعار مؤسسة ETB TCE &amp; GTPH Chaalal">
+            <span class="nav-brand-text">
+              <span class="nav-brand-name">ETB TCE &amp; GTPH</span>
+              <span class="nav-brand-sub">شعلال حميد · منذ 1997</span>
+            </span>
+          </div>
+          <p>مؤسسة أشغال البناء في مختلف مراحله لجميع هياكل الدولة والأشغال العمومية الكبرى والري — إنجاز وبناء بمعايير عالمية.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/chaalalhamidetbtce/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://x.com/etbtce_chaalal" target="_blank" rel="noopener" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/etb.tce.chaalal.hamid" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047v-2.66c0-3.025 1.792-4.697 4.533-4.697 1.313 0 2.686.236 2.686.236v2.97H15.83c-1.491 0-1.956.93-1.956 1.886v2.265h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="../index.html">الرئيسية</a></li>
+            <li><a href="development-ar.html">معلومات عنا</a></li>
+            <li><a href="business-ar.html">التدريب R&amp;D</a></li>
+            <li><a href="Topographic-ar.html">المسح الطبوغرافي</a></li>
+            <li><a href="call-us-ar.html">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>خدماتنا</h4>
+          <ul>
+            <li><a href="../index.html#services">أشغال البناء</a></li>
+            <li><a href="../index.html#services">الأشغال العمومية والري</a></li>
+            <li><a href="../index.html#services">الكهرباء والإنارة</a></li>
+            <li><a href="../index.html#services">الآبار والري المحوري</a></li>
+            <li><a href="../index.html#services">المسح الطبوغرافي</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>معلومات التواصل</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>تمنراست · الجزائر</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span class="ltr"><a href="tel:+213675577070">+213 675 577 070</a></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>أيام العمل · 8:00 — 17:00</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ETB TCE &amp; GTPH Chaalal. جميع الحقوق محفوظة.</span>
+        <span>صُنع بكل احتراف بواسطة <b>khiro</b></span>
+      </div>
+    </div>
+  </footer>
+
 </body>
-
 </html>
-
