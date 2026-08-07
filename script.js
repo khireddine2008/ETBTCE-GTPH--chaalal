@@ -36,14 +36,7 @@
     });
   }
 
-  /* ---------- Language switcher ---------- */
-  var langSelects = document.querySelectorAll("[data-lang-select]");
-  Array.prototype.forEach.call(langSelects, function (sel) {
-    sel.addEventListener("change", function () {
-      var url = this.value;
-      if (url) window.location.href = url;
-    });
-  });
+  /* ---------- Language switcher: handled by i18n.js ---------- */
 
   /* ---------- Smooth anchors ---------- */
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {
